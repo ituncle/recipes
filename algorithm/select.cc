@@ -1,3 +1,8 @@
+/*
+从无序序列中选出第K1到第K2个值，并且有序。
+时间比，94,48,63
+另win32下debug/release相差时间比：4384/94 差100倍
+*/
 #include <algorithm>
 #include <vector>
 
