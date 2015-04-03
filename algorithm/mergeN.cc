@@ -1,3 +1,6 @@
+/*
+Merge N个数组。
+*/
 #include <algorithm>
 #include <iostream>
 #include <iterator>
@@ -8,6 +11,9 @@ typedef std::vector<Record> File;
 
 struct Input
 {
+/*
+这个next()的语义很有意思。
+*/
   Record value;
   size_t index;
   const File* file;
@@ -67,6 +73,7 @@ int main()
 {
   const int kFiles = 32;
   std::vector<File> files(kFiles);
+  //这个生成测试用例的过程挺有意思。
   for (int i = 0; i < kFiles; ++i) {
     File file(rand() % 1000);
     std::generate(file.begin(), file.end(), &rand);
@@ -76,6 +83,7 @@ int main()
 
   File output = mergeN(files);
 
+  //这个打印输出也挺有意思
   std::copy(output.begin(), output.end(),
             std::ostream_iterator<Record>(std::cout, "\n"));
 }
