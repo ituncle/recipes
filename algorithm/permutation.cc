@@ -1,3 +1,6 @@
+/*
+使用std::permutation进行排列
+*/
 #include <algorithm>
 #include <iostream>
 #include <iterator>

@@ -1,3 +1,6 @@
+/*
+如果要获得完整的permutation，你应该对无序数据先排序。
+*/
 #include <algorithm>
 #include <iostream>
 #include <iterator>
