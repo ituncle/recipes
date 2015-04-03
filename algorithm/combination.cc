@@ -1,3 +1,7 @@
+/*
+prev_permutation,next_permutation会执行全排列
+此过程，使用全排列来生成组合(combination)
+*/
 #include <assert.h>
 #include <algorithm>
 #include <iostream>
@@ -25,4 +29,5 @@ int main()
     }
     std::cout << std::endl;
   } while (prev_permutation(selectors.begin(), selectors.end()));
+  return 0;
 }
