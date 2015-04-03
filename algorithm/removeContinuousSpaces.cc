@@ -1,3 +1,6 @@
+/*
+使用std::unique将string中的连续空格替换为单个空格
+*/
 #include <assert.h>
 #include <algorithm>
 #include <string>
@@ -10,7 +13,7 @@ struct AreBothSpaces
   }
 };
 
-void removeContinuousSpaces(std::string& str)
+void removeContinuousSpaces(std::string& str)//注意这个函数名与实际语义不同
 {
   std::string::iterator last
     = std::unique(str.begin(), str.end(), AreBothSpaces());
