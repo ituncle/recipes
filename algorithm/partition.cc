@@ -1,10 +1,13 @@
+/*
+使用STL::partition和stable_partition
+*/
 #include <algorithm>
 #include <iostream>
 #include <iterator>
 
 bool isOdd(int x)
 {
-  return x % 2 != 0;  // x % 2 == 1 is WRONG
+  return x % 2 != 0;  // x % 2 == 1 is WRONG // 这个注释有点意思
 }
 
 void moveOddsBeforeEvens()
